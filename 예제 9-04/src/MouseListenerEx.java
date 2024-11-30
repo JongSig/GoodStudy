@@ -18,38 +18,13 @@ public class MouseListenerEx extends JFrame{
 		setSize(200, 200);
 		setVisible(true);
 		
-		contentPane.addMouseListener(new MouseListener() {
-			
+		contentPane.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
 				// TODO Auto-generated method stub
 				int x = e.getX();
 				int y = e.getY();
 				label.setLocation(x, y);
-			}
-			
-			@Override
-			public void mouseReleased(MouseEvent e) {
-				// TODO Auto-generated method stub
-				
-			}
-			
-			@Override
-			public void mouseExited(MouseEvent e) {
-				// TODO Auto-generated method stub
-				
-			}
-			
-			@Override
-			public void mouseEntered(MouseEvent e) {
-				// TODO Auto-generated method stub
-				
-			}
-			
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				// TODO Auto-generated method stub
-				
 			}
 		});
 	}
