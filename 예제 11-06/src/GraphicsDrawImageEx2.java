@@ -7,7 +7,7 @@ public class GraphicsDrawImageEx2 extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setContentPane(new MyPanel());
 		
-		setSize(200, 300);
+		setSize(800, 1000);
 		setVisible(true);
 	}
 	
@@ -17,7 +17,7 @@ public class GraphicsDrawImageEx2 extends JFrame{
 		
 		public void paintComponent(Graphics g) {
 			super.paintComponent(g);
-			g.drawImage(img, 0, 0, getWidth(), getHeight(), this);
+			g.drawImage(img, 10, 10, getWidth()-20, getHeight()-20, this);
 		}
 	}
 	
