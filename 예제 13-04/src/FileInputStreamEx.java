@@ -5,6 +5,7 @@ public class FileInputStreamEx {
 		byte b[] = new byte[6];
 		try {
 			FileInputStream fin = new FileInputStream("c:\\Temp\\text.out");
+			
 			int n=0, c;
 			while((c = fin.read()) != -1) {
 				b[n] = (byte)c;
