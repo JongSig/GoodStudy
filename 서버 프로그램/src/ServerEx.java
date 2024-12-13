@@ -39,6 +39,5 @@ public class ServerEx {
 				System.out.println("클라이언트와 채팅 중 오류가 발생했습니다.");
 			}
 		}
-		
 	}
 }
